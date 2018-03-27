@@ -3,8 +3,7 @@ FROM debian
 RUN apt-get update -y
 RUN apt-get -y install wkhtmltopdf-dbg
 RUN apt-get -y install xvfb
-RUN apt-get -y install libxrender1 libfontconfig1 libssl-dev -y
-
+RUN apt-get -y install libxrender1 libfontconfig1 libssl-dev
 
 RUN chmod 755 /usr/bin/wkhtmltopdf
 RUN chmod 755 /usr/bin/wkhtmltoimage
